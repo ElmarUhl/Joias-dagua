@@ -1,11 +1,14 @@
 h2 {
-    color: darkcyan;
-}
-
-p {
-    color: darkcyan;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 a {
-    color: darkcyan;
+    color: mediumseagreen;
+    font-size: 30px;
+}
+
+p {
+    color: mediumseagreen;
 }
