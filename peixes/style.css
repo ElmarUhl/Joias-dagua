@@ -1,0 +1,14 @@
+body {
+    background-color: saddlebrown;
+    color: lemonchiffon;
+    margin: 5cm;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: larger;
+    text-align: justify;
+}
