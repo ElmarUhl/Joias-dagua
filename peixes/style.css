@@ -2,13 +2,14 @@ body {
     background-color: saddlebrown;
     color: lemonchiffon;
     margin: 5cm;
+    font-family: 'Advent Pro';
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 p {
-    font-size: larger;
+    font-size: 1cm;
     text-align: justify;
 }
