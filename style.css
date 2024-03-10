@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Advent Pro');
 
 body {
-    background-color: rgb(58, 29, 8);
-    color: white;
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 80%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2cm;
 }
 
 h1 {
-    color: rgb(99, 206, 156);
+    color: #008080;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 85px;
     font-family: 'Advent Pro';
@@ -17,10 +17,20 @@ h1 {
 h2 {
     font-family: 'Advent Pro';
     font-size: 45px;
+    color: #aa0063;
 }
 
 p {
     font-family: 'Advent Pro';
     text-align: justify;
     font-size: 0.7cm;
+}
+
+a {
+    color: #d5b200;
+    font-size: 25px;
+}
+
+strong {
+    color: white;
 }
