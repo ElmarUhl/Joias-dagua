@@ -3,39 +3,32 @@
 
 body {
     background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 80%);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Advent Pro';
 }
 
 main {
     width: 80%;
     margin: auto;
 }
-
 h1 {
     color: #008080;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 85px;
-    font-family: 'Advent Pro';
+    font-size: 4em;
 }
-
 h2 {
-    font-family: 'Advent Pro';
-    font-size: 45px;
     color: #aa0063;
+    font-size: 2em;
 }
 
 p {
-    font-family: 'Advent Pro';
+    color: hsl(0, 0%, 80%);
+    font-size: 1.5em;
     text-align: justify;
-    font-size: 30px;
 }
 
 a {
     /*background-color: #988422;*/
     color: #d5b200;
-    font-size: 30px;
-    font-family: 'Advent Pro';
+    font-size: 1.5em;
 }
 
 strong {
