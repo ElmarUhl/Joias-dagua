@@ -3,6 +3,10 @@ p {
     font-size: 1.5em;
 }
 
+p#principal {
+    color: hsl(0, 0%, 80%);
+}
+
 em {
     color: hsl(0, 0%, 80%);
     font-size: 0.6em;
