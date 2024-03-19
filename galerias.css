@@ -11,3 +11,10 @@ em {
     color: hsl(0, 0%, 80%);
     font-size: 0.6em;
 }
+
+div {
+    display: inline-block;
+}
+div > p {
+    text-align: center;
+}
