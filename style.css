@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-family: 'Jura';
     color: #aa0063;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
 }
 
@@ -32,10 +32,18 @@ p {
     text-align: justify;
 }
 
+ul {
+    color: #d5b200;
+}
+
 a {
     /*background-color: #988422;*/
     color: #d5b200;
     font-size: 1.5em;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
 }
 
 strong {

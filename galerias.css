@@ -2,7 +2,6 @@ p {
     color: #d5b200;
     font-size: 1.5em;
 }
-
 p#principal {
     color: hsl(0, 0%, 80%);
 }
@@ -14,6 +13,11 @@ em {
 
 div {
     display: inline-block;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 20px;
+}
+div:hover {
+    border: 3px solid #008080;
 }
 div > p {
     text-align: center;
