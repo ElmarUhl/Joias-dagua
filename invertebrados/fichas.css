@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 80%);
+    font-family: 'Advent Pro';
+    margin: 0px;
+}
+header {
+    font-family: 'Jura';
+    background-color: #008080b0;
+    color: #00a8a8;
+    margin: 0;
+}
+h1 {
+    font-size: 5em;
+    margin: 20px 20px 20px 10%;
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+h2 {
+    font-family: 'Jura';
+    color: #aa0063;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 10px 20px 20px 0px;
+}
+p {
+    font-size: 1.7em;
+    text-align: justify;
+    margin: 20px 0px;
+}
+strong {
+    color: white;
+}
+small {
+    display: block;
+    font-size: 1.2em;
+}

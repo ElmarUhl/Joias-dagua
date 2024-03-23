@@ -6,46 +6,61 @@
 body {
     background-color: hsl(0, 0%, 10%);
     font-family: 'Advent Pro';
+    margin: 0;
 }
-
+header {
+    font-family: 'Jura';
+    background-color: #008080b0;
+    color: #00a8a8;
+    margin: 0;
+}
+h1 {
+    font-size: 5em;
+    margin: 20px 20px 20px 10%;
+}
 main {
     width: 80%;
     margin: auto;
-    
-}
-h1 {
-    font-family: 'Jura';
-    color: #008080;
-    font-size: 4em;
 }
 h2 {
     font-family: 'Jura';
     color: #aa0063;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: 400;
+    margin: 10px 20px 20px 0px;
 }
-
 p {
     font-family: 'Montserrat';
     color: hsl(0, 0%, 80%);
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: justify;
 }
-
-ul {
+nav {
     color: #d5b200;
+    font-size: 2em;
+    margin-left: 5%;
 }
-
 a {
-    /*background-color: #988422;*/
     color: #d5b200;
-    font-size: 1.5em;
     text-decoration: none;
 }
 a:hover {
     font-weight: bold;
 }
-
-strong {
-    color: white;
+footer{
+    background-color: #791b5283;
+    padding: 1px 0px 1px 10%;
+}
+footer > p {
+    color: #d3007b;
+    margin: 15px 0;
+    
+}
+span > img {
+    padding: 0;
+}
+small {
+    color: hsl(0, 0%, 80%);
+    margin-left: 10px;
+    margin-right: 20px;   
 }
