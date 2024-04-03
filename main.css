@@ -3,64 +3,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
+:root {
+    --cor0: #1a1a1a;
+    --cor1: #00A8A8;
+    --cor2: #008080;
+    --cor3: #145B5B;
+    --cor4: #FFD500;
+    --cor5: #D5B200;
+    --cor6: #988422;
+    --cor7: #D3007B;
+    --cor8: #AA0063;
+    --cor9: #791B52;
+    --cor10: #c874a5;
+
+    --fonte_padrao: 'Advent Pro', sans-serif;
+    --fonte2: 'Jura', sans-serif;
+    --fonte3: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 body {
-    background-color: hsl(0, 0%, 10%);
-    font-family: 'Advent Pro';
-    margin: 0;
+    background-color: var(--cor0);
+    font-family: var(--fonte_padrao);
 }
+
 header {
-    font-family: 'Jura';
-    background-color: #008080b0;
-    color: #00a8a8;
-    margin: 0;
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor3));
+    font-weight: bold;
+    min-height: 150px;
 }
-h1 {
+header > h1 {
+    color: var(--cor1);
+    font-family: var(--fonte2);
     font-size: 5em;
-    margin: 20px 20px 20px 10%;
+    padding: 10px 0 0 30px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.781);
 }
+
 main {
-    width: 80%;
-    margin: auto;
+    max-width: 1500px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    background: url('images/unsplash-650-transparency.png') no-repeat right ;
 }
-h2 {
-    font-family: 'Jura';
-    color: #aa0063;
-    font-size: 3em;
-    font-weight: 400;
-    margin: 10px 20px 20px 0px;
+
+small strong {
+    color: var(--cor4);
 }
-p {
-    font-family: 'Montserrat';
-    color: hsl(0, 0%, 80%);
+
+main h2 {
+    color: var(--cor8);
+    font-family: var(--fonte2);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+article {
+    color: white;
     font-size: 1.5em;
     text-align: justify;
+    max-width: 900px;
 }
+article p {
+    margin-bottom: 10px;
+}
+
 nav {
-    color: #d5b200;
-    font-size: 2em;
-    margin-left: 5%;
+    color: var(--cor5);
+    margin-left: 50px;
 }
-a {
-    color: #d5b200;
+nav a {
+    color: var(--cor5);
     text-decoration: none;
 }
 a:hover {
     font-weight: bold;
 }
+
 footer{
-    background-color: #791b5283;
-    padding: 1px 0px 1px 10%;
+    background-image: linear-gradient(to bottom, var(--cor9),var(--cor8));
+    color: var(--cor10);
+    font-size: 2em;
+    padding: 20px 10%;
 }
 footer > p {
-    color: #d3007b;
-    margin: 15px 0;
-    
-}
-span > img {
-    padding: 0;
-}
-small {
-    color: hsl(0, 0%, 80%);
-    margin-left: 10px;
-    margin-right: 20px;   
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
 }
