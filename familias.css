@@ -24,61 +24,87 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
-    background-color: hsl(0, 0%, 10%);
-    font-family: 'Advent Pro';
+    background-color: var(--cor0);
+    font-family: var(--fonte_padrao);
 }
+
 header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     min-height: 150px;
 }
 header > h1 {
-    font-size: 5em;
-    font-family: var(--fonte2);
     color: var(--cor1);
+    font-family: var(--fonte2);
+    font-size: 5em;
     padding: 10px 0 0 30px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.747);
 }
-nav#menu {
-    background-color: #988422;
-    padding: 10px 10%;
-}
-nav#menu > a {
-    color: #ffd500;
-    font-size: 2em;
-    border: 2px solid hsl(0, 0%, 10%);
+
+nav {
+    background-color: var(--cor6);
+    font-size: 1.5em;
     padding: 10px;
 }
-nav#menu > a:hover {
-    background-color: #ffd500;
-    color: #988422;
+nav a {
+    color: var(--cor4);
+    margin-left: 20px;
+    padding: 10px;
 }
+nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor6);
+    border-radius: 5px;
+}
+
 main {
-    width: 80%;
-    margin: auto;
+    max-width: 1500px;
+    min-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
 }
-h2 {
-    font-family: 'Jura';
-    color: #aa0063;
-    font-size: 3em;
+
+main small {
+    color: var(--cor5);
+}
+main small > strong {
+    color: var(--cor4);
+}
+
+main h2 {
+    font-family: var(--fonte2);
+    color: var(--cor8);
+    font-size: 3.5em;
     font-weight: 400;
-    margin: 10px 20px 20px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-nav.conteudo { opacity: 70%; }
-nav.conteudo:hover { opacity: 100%; }
-image {
-    display: inline-block;
-    width: 20%;
+
+article {
+    opacity: 70%;
+    font-size: 1.6em;
 }
-p {
+article:hover { opacity: 100%; }
+article > image {
     display: inline-block;
-    font-family: 'Montserrat';
-    color: hsl(0, 0%, 80%);
-    font-size: 1.5em;
+    width: 300px;
+}
+article p {
+    display: inline-block;
+    font-family: var(--fonte3);
+    color: white;
     text-align: justify;
-    text-indent: 50px;
-    width: 70%;
+    text-indent: 100px;
+    max-width: 1100px;
+    min-width: 350px;
+    line-height: 1.5em;
 }
-a { text-decoration: none; }
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
+    height: 150px;
+}
