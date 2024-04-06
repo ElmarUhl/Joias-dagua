@@ -24,41 +24,58 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
     background-color: var(--cor0);
     font-family: var(--fonte_padrao);
-    margin: 0px;
 }
+
 header {
-    font-family: var(--fonte2);
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+}
+header > h1 {
     color: var(--cor1);
-}
-h1 {
+    font-family: var(--fonte2);
     font-size: 5em;
-    margin: 20px 20px 20px 10%;
+    padding: 10px 0 0 30px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.747);
 }
+
 nav#menu {
     background-color: var(--cor6);
-    padding: 10px 10%;
+    font-size: 1.5em;
+    padding: 10px;
 }
 nav#menu > a {
-    color: var(--cor5);
-    font-size: 2em;
-    border: 2px solid hsl(0, 0%, 10%);
+    color: var(--cor4);
+    margin-left: 20px;
     padding: 10px;
-    margin: 0;
+    border-radius: 5px;
 }
 nav#menu > a:hover {
     background-color: var(--cor4);
+    color: var(--cor6);
+}
+
+main {
+    max-width: 1500px;
+    min-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+main small {
     color: var(--cor5);
 }
-main {
-    width: 80%;
-    margin: auto;
+main small > strong {
+    color: var(--cor4);
 }
+
+/* Verificar */
 h2 {
     font-family: 'Jura';
     color: #aa0063;
@@ -66,34 +83,34 @@ h2 {
     font-weight: 400;
     margin: 10px 20px 20px 0px;
 }
+
 nav.conteudo {
     display: inline-block;
-    border: 2px solid hsl(0, 0%, 80%);
+    border: 2px solid gray;
     border-radius: 20px;
     padding: 10px;
-    margin: 30px 5px 5px 0px;
+    margin-top: 30px;
+    margin-right: 5px;
     opacity: 50%;
-    width: 20%;    
+    width: 300px;
 }
 nav.conteudo:hover {
     border: 2px solid var(--cor2);
     opacity: 100%;
 }
-a {
+nav.conteudo img { width: 100%; }
+nav.conteudo h4 {
     color: #d5b200;
     font-size: 1.5em;
     text-decoration: none;
-    margin: auto;
-}
-img { width: 100%; }
-p {
-    color: hsl(0, 0%, 80%);
-    font-size: 0.6em;
-    margin: 0;
     text-align: center;
 }
-h4 {
-    font-size: 1em;
+nav.conteudo p {
+    color: lightgrey;
     text-align: center;
-    margin: 0;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
+    height: 150px;
 }

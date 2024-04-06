@@ -53,11 +53,11 @@ nav a {
     color: var(--cor4);
     margin-left: 20px;
     padding: 10px;
+    border-radius: 5px;
 }
 nav > a:hover {
     background-color: var(--cor4);
     color: var(--cor6);
-    border-radius: 5px;
 }
 
 main {
