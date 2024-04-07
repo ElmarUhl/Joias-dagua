@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
 :root {
-    --cor0: #1a1a1a;
+    --cor0: #1A1A1A;
     --cor1: #00A8A8;
     --cor2: #008080;
     --cor3: #145B5B;
@@ -14,7 +14,7 @@
     --cor7: #D3007B;
     --cor8: #AA0063;
     --cor9: #791B52;
-    --cor10: #c874a5;
+    --cor10: #C874A5;
 
     --fonte_padrao: 'Advent Pro', sans-serif;
     --fonte2: 'Jura', sans-serif;
@@ -67,7 +67,6 @@ main {
     margin-bottom: 20px;
     padding: 10px;
 }
-
 main small {
     color: var(--cor5);
 }
