@@ -2,49 +2,130 @@
 @import url('https://fonts.googleapis.com/css?family=Advent Pro');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 
+:root {
+    --cor1: #00a8a8;
+    --cor2: #008080;
+    --cor3: #145B5B;
+    --cor4: #FFD500;
+    --cor5: #D5B200;
+    --cor6: #988422;
+    --cor7: #D3007B;
+    --cor8: #AA0063;
+    --cor9: #791B52;
+    --cor10: #C874A5;
+
+    --gray1: #1A1A1A;
+    --gray2: #666666;
+    --gray3: rgb(204, 204, 204);
+
+    --fonte_padrao: 'Advent Pro', sans-serif;
+    --font2: 'Jura', sans-serif;
+    --font3: 'Monserat', sans-serif;
+}
+
 * {
-    font-family: 'Advent Pro';
-    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
+
 body {
-    background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 80%);
-    margin: 0px;
+    background-color: var(--gray1);
+    font-family: var(--fonte_padrao);
 }
+
 header {
-    font-family: 'Jura';
-    background-color: #008080b0;
-    color: #00a8a8;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+}
+header > h1 {
+    color: var(--cor1);
+    font-family: var(--font2);
+    font-size: 5em;
+    padding: 10px 0 0 30px;
+    text-shadow: 3px 3px 3px var(--gray1);
+}
+
+nav#menu {
+    background-color: var(--cor6);
+    font-size: 1.5em;
+    padding: 10px;
+}
+nav#menu > a {
+    color: var(--cor4);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav#menu > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+
+main {
+    max-width: 1500px;
+    min-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+main small {
+    color: var(--cor5);
+}
+main small > strong {
+    color: var(--cor4);
+}
+main aside {
+    margin-top: 10px;
+}
+aside p {
+    color: var(--gray3);
+    font-size: 1.2em;
+    text-align: right;
+    width: 500px;
     margin: 0;
 }
-h1 {
-    font-size: 5em;
-    margin: 20px 20px 20px 10%;
-}
-main {
-    width: 80%;
-    margin: auto;
-}
-small {
-    display: block;
-    font-size: 1.2em;
-}
-p {
+
+article {
+    color: var(--gray3);
     font-size: 1.7em;
     text-align: justify;
+}
+article p {
     margin: 20px 0px;
 }
-strong { color: white; }
+article strong {
+    color: white;
+    font-weight: bolder;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
 h2 {
     font-family: 'Jura';
-    color: #aa0063;
+    color: var(--cor8);
     font-size: 3em;
     font-weight: 400;
     margin: 10px 20px 20px 0px;
 }
-ul {
-    font-size: 1.7em;
+
+div.video {
+    background-color: var(--cor3);
+    padding: 3px;
+    position: relative;
+    padding-bottom: 50.3%;
 }
-ol {
-    font-size: 1.7em;
+div.video > iframe {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    top: 0%;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
+    height: 150px;
 }
