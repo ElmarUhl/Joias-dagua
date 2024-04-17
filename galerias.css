@@ -104,6 +104,10 @@ nav.conteudo h4 {
     text-decoration: none;
     text-align: center;
 }
+nav h5 {
+    color: var(--cor7);
+    font-size: 1.2em;
+}
 nav.conteudo p {
     color: lightgrey;
     text-align: center;
