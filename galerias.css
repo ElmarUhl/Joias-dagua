@@ -113,6 +113,34 @@ nav.conteudo p {
     text-align: center;
 }
 
+nav.receita {
+    color: white;
+    font-size: 1.2em;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 5px;
+    width: 350px;
+    text-align: justify;
+}
+nav.receita h4 {
+    color: var(--cor5);
+    font-size: 1.2em;
+    text-align: center;
+}
+nav.receita h5 {
+    margin-top: 10px;
+}
+nav.receita ul, ol{
+    list-style-position: inside;
+    margin-top: 10px;
+}
+nav.receita li {
+    margin-top: 10px;
+}
+
 footer {
     background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
     height: 150px;
