@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+:root {
+    --cor0: #1A1A1A;
+    --cor1: #00A8A8;
+    --cor2: #008080;
+    --cor3: #145B5B;
+    --cor4: #FFD500;
+    --cor5: #D5B200;
+    --cor6: #988422;
+    --cor7: #D3007B;
+    --cor8: #AA0063;
+    --cor9: #791B52;
+    --cor10: #C874A5;
+
+    --fonte_padrao: 'Advent Pro', sans-serif;
+    --fonte2: 'Jura', sans-serif;
+    --fonte3: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte_padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+}
+header > h1 {
+    color: var(--cor1);
+    font-family: var(--fonte2);
+    font-size: 5em;
+    padding: 10px 0 0 30px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.747);
+}
+
+nav#menu {
+    background-color: var(--cor6);
+    font-size: 1.5em;
+    padding: 10px;
+}
+nav#menu > a {
+    color: var(--cor4);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav#menu > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+
+main {
+    max-width: 1500px;
+    min-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+main small {
+    color: var(--cor5);
+}
+main small > strong {
+    color: var(--cor4);
+}
+
+/* Verificar */
+h2 {
+    font-family: 'Jura';
+    color: var(--cor8);
+    font-size: 3em;
+    font-weight: 400;
+    margin: 10px 20px 20px 0px;
+}
+
+nav.conteudo {
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 5px;
+    opacity: 50%;
+    width: 300px;
+}
+nav.conteudo:hover {
+    border: 2px solid var(--cor2);
+    opacity: 100%;
+}
+nav.conteudo img { width: 100%; }
+nav.conteudo h4 {
+    color: var(--cor5);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+}
+nav h5 {
+    color: var(--cor7);
+    font-size: 1.2em;
+}
+
+div.row {
+}
+div.receita {
+    display: inline-block;
+    color: white;
+    font-size: 1.2em;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: justify;
+    width: 80%;
+}
+div.receita h4 {
+    color: var(--cor5);
+    font-size: 1.5em;
+    text-align: center;
+}
+div.receita h5 {
+    margin-top: 10px;
+    color: var(--cor1);
+    font-size: 1.2em;
+}
+div.receita ul, ol{
+    list-style-position: inside;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+div.receita li {
+    margin-top: 10px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
+    height: 150px;
+}
