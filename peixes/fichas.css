@@ -122,6 +122,12 @@ div.video > iframe {
     left: 5%;
     top: 0%;
 }
+iframe#map {
+    width: 1000px;
+    height: 500px;
+    border: 2px solid var(--gray3);
+    padding: 10px;
+}
 
 footer {
     background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
