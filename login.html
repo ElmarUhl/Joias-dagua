@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="familias.css">
+    <style>
+        form {
+            color: white;
+        }
+
+        form > p {
+            margin: 5px 20px;
+            font-size: 1.5em;
+        }
+        p {
+            color: white;
+            font-size: 2em;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<header>
+    <h1>Área Reservada</h1>
+</header>
+<body>
+    <nav>
+        <a href="main.html">Voltar a página inicial</a>
+    </nav>
+    <main>
+        <small>Home > <strong>Área Reservada</strong></small>
+
+        <p>Para acessar a área reservada preencha os dados abaixo</p>
+
+        <form action="login.php" method="post">
+            <p>
+                <label for="iuser">Usuário: </label>
+                <input type="text" name="user" id="iuser" required minlength="5" maxlength="10">
+            </p>
+            <p>
+                <label for="ipass">Senha: </label>
+                <input type="password" name="pass" id="ipass" required minlength="5" maxlength="10">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" onclick="window.open('links.html')">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+<footer></footer>
+</html>

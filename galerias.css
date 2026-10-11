@@ -27,6 +27,10 @@
     text-decoration: none;
 }
 
+.indisp {
+    display: none;
+}
+
 body {
     background-color: var(--cor0);
     font-family: var(--fonte_padrao);
