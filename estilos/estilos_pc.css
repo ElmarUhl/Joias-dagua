@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/*
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+#autor {
+    font-size: 0.7em;
+    text-align: center;
+}
+:root {
+    --cor0: #1a1a1a;
+    --cor1: #00A8A8;
+    --cor2: #008080;
+    --cor3: #145B5B;
+    --cor4: #FFD500;
+    --cor5: #D5B200;
+    --cor6: #988422;
+    --cor7: #D3007B;
+    --cor8: #AA0063;
+    --cor9: #791B52;
+    --cor10: #c874a5;
+
+    --fonte_padrao: 'Advent Pro', sans-serif;
+    --fonte2: 'Jura', sans-serif;
+    --fonte3: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0%;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte_padrao);
+}
+
+*/
+
+/*
+background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+font-weight: bold;
+*/
+header {
+    min-height: 150px;
+}
+
+/*
+display: inline-block;
+color: var(--cor1);
+font-family: var(--fonte2);
+text-shadow: 3px 3px 3px var(--cor0);
+*/
+header h1 {
+    font-size: 5em;
+    padding: 10px 0px 0px 30px;
+}
+
+/*
+header img {
+    display: inline-block;
+}
+*/
+img.pc {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/*
+*/
+main {
+    max-width: 1500px;
+    min-width: 350px;
+    margin: 0px auto;
+    padding: 10px;
+    background: url('../images/unsplash-650-transparency.png') no-repeat right bottom;
+    height: 60vh
+}
+
+/* 
+color: var(--cor4);
+*/
+small {
+    display: block;
+    font-size: small;
+}
+
+/*
+color: var(--cor8);
+font-family: var(--fonte2);
+*/
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+/*
+display: inline-block;
+color: white;
+text-align: justify;
+100px;
+*/
+article {
+    font-size: 2em;
+    max-width: 900px;
+    padding: 0px 0px 50px 
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+/*
+display: inline-block;
+*/
+nav {
+    margin-right: 30px
+}
+
+/*
+color: var(--cor5);
+*/
+nav a {
+    display: block;
+    font-size: 2em;
+    margin: 5px 0px 5px 10px;
+}
+
+/*
+nav a:hover {
+    color: var(--cor4);
+}
+
+nav#menu {
+    background-color: var(--cor6);
+    font-size: 1.5em;
+    padding: 0px;
+}
+nav#menu > a {
+    color: var(--cor4);
+    margin-left: 0px;
+    padding: 0px;
+    border-radius: 5px;
+}
+nav#menu > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+*/
+
+/*
+background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
+color: var(--cor10);
+*/
+footer{
+    font-size: 2em;
+    padding: 20px 10%;
+    margin-top: 20px;
+}
