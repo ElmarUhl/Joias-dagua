@@ -98,4 +98,5 @@ footer{
     background-image: linear-gradient(to bottom, var(--cor9), var(--cor8));
     color: var(--cor10);
     padding: 10px;
+    font-size: 1.5em;
 }
