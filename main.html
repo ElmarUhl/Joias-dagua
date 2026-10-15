@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- Google Icons -->
 
 </head>
-<body>
+<body onresize="resize()">
     <header>
         <h1>Joias d'água</h1>
         <img class="pc" src="images/QR_code.png" alt="QR-Code">
@@ -65,7 +65,13 @@
                 itens.style.display = 'block'
             }
         }
-
+        function resize() {
+            if (innerWidth >= 992) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
     </script>
 </body>
 </html>
