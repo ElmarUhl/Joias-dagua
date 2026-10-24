@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/estilos_all.css" media="all">
-    <link rel="stylesheet" href="estilos/estilos_pc.css" media="screen and (min-width: 992px)">
-    <!-- <link rel="stylesheet" href="estilos/estilos_pc.css" media="screen and (min-width: 992px) and (max-width: 1200px)"> -- descomente quando adicionar telas maiores -->
-    <title>Joias d'água</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- Google Icons -->
 
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/main.css">    
+
+    <title>Joias d'água</title>
 </head>
 <body onresize="resize()">
     <header>
         <h1>Joias d'água</h1>
-        <img class="pc" src="images/QR_code.png" alt="QR-Code">
+        <a href="images/original QR_code.png" target="_blank"><img class="QR" src="images/QR_code.png" alt="QR-Code"></a>
     </header>
     <span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
     <nav id="itens">
-        <a href="peixes.html">Peixes</a>
+        <a href="peixes.html" rel="next">Peixes</a>
         <a href="invertebrados.html" rel="next">Invertebrados</a>
         <a href="plantas.html" rel="next">Plantas</a>
         <a href="alimentos.html" rel="next">Alimentos</a>
@@ -57,21 +59,6 @@
 			<p>Então curta, comente e inscreva-se para nos ajudar a crescer.</p>
 			<p>Esperamos que você encontre as informações desejadas e aproveite a visita.</p>
     </footer>
-    <script>
-        function clicked() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-        function resize() {
-            if (innerWidth >= 992) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

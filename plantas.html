@@ -1,142 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="familias.css">
+		<link rel="stylesheet" href="estilos/estilos_all.css" media="all">
+		<link rel="stylesheet" href="estilos/estilos_pc.css" media="screen and (min-width: 992px)">
+		<!--
+			<link rel="stylesheet" href="familias.css">
+		-->
 		<title>Famílias de Plantas</title>
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	</head>
-	<body>
+	<body onresize="resize()">
 		<header>
 			<h1>Famílias de Plantas</h1>
 		</header>
-		<nav>
-			<a href="main.html">Voltar à página inicial</a>
+		<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+		<nav id="itens">
+			<a href="main.html" rel="prev">Voltar à página inicial</a>
 		</nav>
 		<main>
-			<small>Home > <strong>Famílias de Plantas</strong></small>
-
-			<h2>Hypnaceae</h2>
 			<article>
-				<a href="hypnaceae.html" rel="next">
-					<img src="plantas/images/bolbitis heudelotii.png" alt="">
-					<p><strong>Gêneros:</strong> <em>Vesicularia</em></p>
-				</a>
+				<small>Home > <strong>Famílias de Plantas</strong></small>
+				<h1>Polypodiaceae</h1>
+				<div class="conteudo">
+					<a href="plantas/microsorum-pteropus.html" rel="next">
+						<div class="imagem">
+							<img src="plantas/images/Microsorium pteropus.jpg" alt="" class="galeria">
+						</div>
+					</a>
+					<p class="vulgar">Tetra preto</p>
+					<p class="cientifico">Gymnocorymbus ternetzi</p>
+				</div>
 			</article>
-
-			<h2>Pteridaceae</h2>
-			<article>
-				<a href="pteridaceae.html" rel="next">
-					<img src="plantas/images/bolbitis heudelotii.png" alt="">
-					<p><strong>Gêneros:</strong> <em>Ceratopteris</em></p>
-				</a>
-			</article>
-
-			<h2>Polypodiaceae</h2>
-			<article>
-				<a href="polypodiaceae.html" rel="next">
-					<img src="plantas/images/Microsorium pteropus.jpg" alt="" width="200px">
-					<p><strong>Gêneros:</strong> <em>Microsorium</em></p>
-				</a>
-			</article>
-
-			<h2>Araceae</h2>
-			<article>
-				<a href="araceae.html" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Anubias, Cryptocoryne</em></p>
-				</a>
-			</article>
-
-			<h2>Scrophulariaceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Bacopa</em></p>
-				</a>
-			</article>
-
-			<h2>Ceratophyllaceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Ceratophyllum</em></p>
-				</a>
-			</article>
-
-			<h2>Alismataceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Echinodorus, Sagittaria</em></p>
-				</a>
-			</article>
-
-			<h2>Hydrocharitaceae</h2>
-			<article>
-				<a href="hydrocharitaceae.html" rel="next">
-					<img src="plantas/images/Vallisneria nana.jpg" alt="" height="300px">
-					<p><strong>Gêneros:</strong> <em>Egeria, Limnobium, Vallisneria</em></p>
-				</a>
-			</article>
-
-			<h2>Apiaceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Hydrocotyle</em></p>
-				</a>
-			</article>
-
-			<h2>Acanthaceae</h2>
-			<article>
-				<a href="acanthaceae.html" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Hygrophila</em></p>
-				</a>
-			</article>
-
-			<h2>Onagraceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Ludwigia</em></p>
-				</a>
-			</article>
-
-			<h2>Menyanthaceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Nymphoides</em></p>
-				</a>
-			</article>
-
-			<h2>Lythraceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Rotala</em></p>
-				</a>
-			</article>
-
-			<h2>Pontederiaceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Eichhornia</em></p>
-				</a>
-			</article>
-
-			<h2>Salviniaceae</h2>
-			<article>
-				<a href="" rel="next">
-					<img src="" alt="">
-					<p><strong>Gêneros:</strong> <em>Salvinia</em></p>
-				</a>
-			</article>
-
 		</main>
-		<footer></footer>
+		<footer>
+		</footer>
+
+		<script src="script.js"></script>
 	</body>
 </html>
