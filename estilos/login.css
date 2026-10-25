@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Smartphone */
 @import url('https://fonts.googleapis.com/css?family=Advent Pro');
 
 :root {
@@ -86,8 +87,31 @@ div.campo > input {
     padding: 4px;
     transform: translateY(-9px);
 }
-
 div.botoes {
     display: block;
     width: 100%;
+}
+
+/* Tablet e monitores */
+@media screen and (min-width: 992px) {
+    article#login {
+        width: 70vw;
+        height: 350px;
+    }
+    div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    div#formulario {
+        float: right;
+        width: 50%;
+    }
+    div#formulario > h1 {
+        font-size: 1.3em;
+    }
+    div#formulario > p {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
 }
