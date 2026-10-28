@@ -3,35 +3,45 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="galerias.css">
+		<link rel="stylesheet" href="estilos/estilo.css">
+		<link rel="stylesheet" href="estilos/galeria.css">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 		<title>Galeria de Peixes Lápis</title>
 	</head>
-	<body>
+	<body onresize="resize()">
 		<header>
 			<h1>Galeria de Peixes Lápis</h1>
 		</header>
-		<nav id="menu">
+		<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+		<nav id="itens">
 			<a href="main.html">Voltar a página inicial</a><a href="peixes.html">Voltar a famílias</a>
 		</nav>
 		<main>
-			<small>Home > Famílias de Peixes > <strong>Galeria de Peixes Lápis</strong></small>
-			<div class="row">
-				<nav class="conteudo">
+			<article>
+				<small>Home > Famílias de Peixes > <strong>Galeria de Peixes Lápis</strong></small>
+				<section>
 					<a href="peixes/nannostomus_beckfordi.html" target="_self" rel="next">
-						<img src="images/peixe lapis dourado.png" alt="">
-						<h4>Peixe lápis dourado</h4>
-						<p><em>Nannostomus beckfordi</em></p>
+						<div class="conteudo">
+							<img src="images/peixe lapis dourado.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Peixe lápis dourado</p>
+								<p class="cientifico">Nannostomus beckfordi</p>
+							</div>
+						</div>
 					</a>
-				</nav>
-				<nav class="conteudo">
+
 					<a href="peixes/copella_cf_metae.html" target="_self" rel="next">
-						<img src="images/copeina faixa negra.png" alt="">
-						<h4>Copeína faixa negra</h4>
-						<p><em>Copella metae</em></p>
-					</a>
-				</nav>
-			</div>
+						<div class="conteudo">
+							<img src="images/copeina faixa negra.png" alt="">
+							<div id="nomes"></div>
+							<p class="vulgar">Copeína faixa negra</p>
+							<p class="cientifico">Copella metae</p>
+						</div>
+						</a>
+				</section>
+		</article>
 		</main>
 		<footer></footer>
+		<script src="script.js"></script>
 	</body>
 </html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+/* Smartphone */
+main {
+    background-image: none;
+    width: 400px;
+    margin: auto;
+}
+main h1 {
+    font-family: var(--fonte2);
+    color: var(--cor8);
+    font-size: 3.5em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section {
+    opacity: 70%;
+    font-size: 1.6em;
+}
+section:hover { opacity: 100%; }
+section > image {
+    display: inline-block;
+    width: 300px;
+}
+section p {
+    display: inline-block;
+    font-family: var(--fonte3);
+    font-size: 0.8em;
+    color: white;
+    text-align: justify;
+    text-indent: 100px;
+    max-width: 1100px;
+    min-width: 350px;
+    line-height: 1.5em;
+}
+
+/* Tablet e monitores */
+@media screen and (min-width: 992px) {
+    main {
+        width: 800px;
+    }
+    article > h1 {
+        font-size: 3em;
+    }
+}
+

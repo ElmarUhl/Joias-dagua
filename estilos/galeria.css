@@ -31,6 +31,7 @@ section {
     height: 400px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     padding: 20px;
 }
 div.conteudo {
@@ -66,4 +67,10 @@ p.cientifico {
     color: lightgrey;
     font-style: italic;
     text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    section{
+        justify-content: flex-start;
+    }
 }

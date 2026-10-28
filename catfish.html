@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="galerias.css">
-    <title>Peixes Gato</title>
-</head>
-<body>
-    <header>
-        <h1>Galeria de Peixes Gato</h1>
-    </header>
-    <nav id="menu">
-        <a href="main.html">Voltar a página inicial</a><a href="peixes.html">Voltar a famílias</a>
-    </nav>
-    <main>
-        <small>Home > Famílias de Peixes > <strong>Galeria de Peixes Gato</strong><small>
-        <div class="row">
-            <nav  class="conteudo">
-                <a href="peixes/corydoras_hastatus.html" target="_self" rel="next">
-                    <img src="images/coridora ana.png" alt="">
-                    <h4>Coridora anã</h4>
-                    <p><em>Corydora hastatus</em></p>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="estilos/estilo.css">
+		<link rel="stylesheet" href="estilos/galeria.css">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+		<title>Galeria peixes gato</title>
+	</head>
+	<body onresize="resize()">
+		<header>
+			<h1>Galeria de Peixes Gato</h1>
+		</header>
+		<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+		<nav id="itens">
+			<a href="main.html">Voltar a página inicial</a><a href="peixes.html">Voltar a famílias</a>
+		</nav>
+		<main>
+			<article>
+				<small>Home > Famílias de Peixes > <strong>Galeria de Peixes Gato</strong></small>
+				<section>
+					<a href="peixes/corydoras_hastatus.html" target="_self" rel="next">
+						<div  class="conteudo">
+							<img src="images/coridora ana.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Coridora anã</p>
+								<p class="cientifico">Corydora hastatus</p>
+							</div>
+						</div>
+					</a>
+					
+					<a href="peixes/bunocephalus_coracoideus.html" target="_self" rel="next">
+                    <div  class="conteudo">
+                            <img src="images/banjo.png" alt="">
+                            <div id="nomes">
+                                <p class="vulgar">Banjo</p>
+                                <p class="cientifico">Bunocphalus coracoideus</p>
+                            </div>
+                    </div>
                 </a>
-            </nav >
-            <nav  class="conteudo">
-                <a href="peixes/bunocephalus_coracoideus.html" target="_self" rel="next">
-                    <img src="images/banjo.png" alt="">
-                    <h4>Banjo</h4>
-                    <p><em>Bunocephalus coracoideus</em></p>
-                </a>
-            </nav >
-            <nav  class="conteudo">
-                <a href="peixes/otocinclus-macrospilus.html" target="_self" rel="next">
-                    <img src="images/otocinclus.png" alt="">
-                    <h4>Otocinclus</h4>
-                    <p><em>Otocinclus macrospilus</em></p>
-                </a>
-            </nav >
-            <nav  class="conteudo">
-                <a href="peixes/corydoras-schwarzi.html" target="_self" rel="next">
-                    <img src="images/coridora tigre.png" alt="">
-                    <h4>Coridora tigre</h4>
-                    <p><em>Corydora schwarzi</em></p>
-                </a>
-            </nav >
 
-        </div>
-    </main>
-    <footer></footer>
+                <a href="peixes/otocinclus-macrospilus.html" target="_self" rel="next">
+                    <div  class="conteudo">
+                            <img src="images/otocinclus.png" alt="">
+                            <div id="nomes">
+                                <p class="vulgar">Otocinclus</p>
+                                <p class="cientifico">Otocinclus macrospilus</p>
+                            </div>
+                    </div>
+                </a>
+
+                <a href="peixes/corydoras-schwarzi.html" target="_self" rel="next">
+                    <div  class="conteudo">
+                            <img src="images/coridora tigre.png" alt="">
+                            <div id="nomes">
+                                <p class="vulgar">Coridora tigre</p>
+                                <p class="cientifico">Corydora schwarzi</p>
+                            </div>
+                    </div>
+                </a>
+			</section>
+		</article>
+	</main>
+	<footer></footer>
+	<script src="script.js"></script>
 </body>
 </html>

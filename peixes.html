@@ -3,51 +3,56 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="familias.css">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- Google Icons -->
+		<link rel="stylesheet" href="estilos/estilo.css">
+		<link rel="stylesheet" href="estilos/familias.css">
 		<title>Famílias de Peixes</title>
 	</head>
-	<body>
+	<body onresize="resize()">
 		<header>
 			<h1>Famílias de Peixes</h1>
 		</header>
-		<nav>
-			<a href="main.html">Voltar à página inicial</a>
+		<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+		<nav id="itens">
+			<a href="main.html" rel="prev">Voltar à página inicial</a>
 		</nav>
 		<main>
-			<small>Home > <strong>Famílias de Peixes</strong></small>
-
-			<h2>Peixes lápis</h2>
 			<article>
-				<a href="peixes_lapis.html" rel="next">
-					<img src="images/peixe lapis dourado.png" alt="">
-					<p>Os peixes lápis com seus corpos esguios são coloridos e pacíficos e são uma ótima escolha alternativa aos tetras. São geralmente peixes de cardume e provenientes da América do Sul. Algumas espécies preferem habitar a superfície da água e outras a meia água. Apresentam comportamentos interessantes tornandos-os uma escolha interessante ao aquário.</p>
-				</a>
-			</article>
+				<small>Home > <strong>Famílias de Peixes</strong></small>
+				<h1>Peixes lápis</h1>
+				<section>
+					<a href="peixes_lapis.html" rel="next">
+						<img src="images/peixe lapis dourado.png" alt="">
+						<p>Os peixes lápis com seus corpos esguios são coloridos e pacíficos e são uma ótima escolha alternativa aos tetras. São geralmente peixes de cardume e provenientes da América do Sul. Algumas espécies preferem habitar a superfície da água e outras a meia água. Apresentam comportamentos interessantes tornandos-os uma escolha interessante ao aquário.</p>
+					</a>
+				</section>
 
-			<h2>Tetras</h2>
-			<article>
+			<h1>Tetras</h1>
+			<section>
 				<a href="tetras.html" rel="next">
 					<img src="images/tetra neon cardinal.png" alt="">
 					<p>Geralmente são peixes pequenos e coloridos, pacíficos e de fácil cuidado tornando-os bastante populares. Eles costumam nadar em cardumes e são encontrados na América do Sul, África e Ásia. Seu tamanho típico gira em torno de 2,5 a 5 cm. Devido ao seu pequeno tamanho e robutez são ótimos para aquários menores.</p>
 				</a>
-			</article>
-
-			<h2>Peixes Gato</h2>
-			<article>
+			</section>
+			
+			<h1>Peixes Gato</h1>
+			<section>
 				<a href="catfish.html" rel="next">
 					<img src="images/coridora ana.png" alt="">
 					<p>Os peixes gato são grande grupo e seu tamanho vai de pequenos a grandes peixes. Habitam a água doce em todo o mundo. Alguns tem adaptações muito especiais como os peixes elétricos, já outros têm bocas em forma de ventosa. A referência <strong>peixes gato</strong> advém de muitos apresentarem barbilhões semelhantes ao bigodes dos gatos.</p>
 				</a>
-			</article>
-
-			<h2>Outros</h2>
-			<article>
+			</section>
+			
+			<h1>Outros</h1>
+			<section>
 				<a href="outros.html" rel="next">
 					<img src="images/carinotetraodon travancoricus.png" alt="">
 					<p>Outros peixes como o o baiacu-anão que é um pequeno peixe de água doce, originário da Índia.  Popular no aquarismo devido ao seu tamanho diminuto e comportamento interessante</p>
 				</a>
+			</section>
 			</article>
 		</main>
 		<footer></footer>
+		<script src="script.js"></script>
 	</body>
 </html>

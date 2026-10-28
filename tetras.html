@@ -3,155 +3,217 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="galerias.css">
+		<link rel="stylesheet" href="estilos/estilo.css">
+		<link rel="stylesheet" href="estilos/galeria.css">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 		<title>Galeria de Tetra</title>
 	</head>
-	<body>
+	<body onresize="resize()">
 		<header>
 			<h1>Galeria de Tetras</h1>
 		</header>
-		<nav id="menu">
+		<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+		<nav id="itens">
 			<a href="main.html">Voltar a página inicial</a><a href="peixes.html">Voltar a famílias</a>
 		</nav>
 		<main>
-			<small>Home > Famílias de Peixes > <strong>Galeria de Tetras</strong></small>
-			<div class="row">
-				<nav class="conteudo">
+			<article>
+				<small>Home > Famílias de Peixes > <strong>Galeria de Tetras</strong></small>
+				<section>
 					<a href="peixes/gymnocorymbus_ternetzi.html" target="_self" rel="next">
-						<img src="images/tetra preto.png" alt="">
-						<h4>Tetra preto</h4>
-						<p><em>Gymnocorymbus ternetzi</em></p>
+						<div class="conteudo">
+								<img src="images/tetra preto.png" alt="">
+								<div id="nomes">
+									<p class="vulgar">Tetra preto</p>
+									<p class="cientifico">Gymnocorymbus ternetzi</p>
+								</div>
+						</div>
 					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hasemania-nana.html" target="_self" rel="next">
-						<img src="images/tetra silver tip.png" alt="">
-						<h4>Tetra silver tip</h4>
-						<p><em>Hasemania nana</em></p>
-					</a>
-				</nav>
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_amandae.html" target="_self" rel="next">
-						<img src="images/tetra foguinho.png" alt="">
-						<h4>Foguinho</h4>
-						<p><em>Hyphessobrycon amandae</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo, indisp">
-					<a href="peixes/hyphessobrycon_columbianus.html" target="_self" rel="next">
-						<img src="images/tetra colombiano.png" alt="">
-						<h4>Tetra colombiano</h4>
-						<p><em>Hyphessobrycon colombianus</em></p>
-					</a>
-				</nav>
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_eques.html" target="_self" rel="next">
-						<img src="images/tetra mato grosso.png" alt="">
-						<h4>Mato grosso</h4>
-						<p><em>Hyphessobrycon eques</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_flammeus.html" target="_self" rel="next">
-						<img src="images/tetra engraçadinho.png" alt="">
-						<h4>Tetra engraçadinho</h4>
-						<p><em>Hyphessobrycon flammeus</em></p>
-					</a>
-			</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_herbertaxelrodi.html" target="_self" rel="next">
-						<img src="images/tetra neon negro.png" alt="">
-						<h4>Tetra neon negro</h4>
-						<p><em>H. herbertaxelrodi</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_megalopterus.html" target="_self" rel="next">
-						<img src="images/tetra fantasma negro.png" alt="">
-						<h4>Black phantom</h4>
-						<p><em>H. megalopterus</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon-notidanos.html" target="_self" rel="next">
-						<img src="images/tetra red devil.png" alt="">
-						<h4>Red devil</h4>
-						<p><em>Hyphessobrycon notidanos</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon-paepkei.html" target="_self" rel="next">
-						<img src="images/tetra paepkei.png" alt="">
-						<h4>Rosáceo pingo de ouro</h4>
-						<p><em>Hyphessobrycon paepkei</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_pulchripinnis.html" target="_self" rel="next">
-						<img src="images/tetra limao.png" alt="">
-						<h4>Tetra limão</h4>
-						<p><em>H. pulchripinnis</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon-pyrrhonotus.html" target="_self" rel="next">
-						<img src="images/tetra rosaceo flame back.png" alt="">
-						<h4>Rosáceo flame back</h4>
-						<p><em>Hyphessobrycon pyrrhonotus</em></p>
-					</a>
-				</nav>
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon-rosaceus.html" target="_self" rel="next">
-						<img src="images/tetra bentosi.png" alt="">
-						<h4>Tetra bentosi</h4>
-						<p><em>Hyphessobrycon rosaceus</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/hyphessobrycon_mzuel.html" target="_self" rel="next">
-						<img src="images/tetra red cherry.png" alt="">
-						<h4>Tetra red cherry</h4>
-						<p><em>Hyphessobrycon sp. 'mzuel'</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo">
-					<a href="peixes/nematobrycon_palmeri.html" target="_self" rel="next">
-						<img src="images/tetra imperador.png" alt="">
-						<h4>Tetra imperador</h4>
-						<p><em>Nematobrycon palmeri</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo, indisp">
-					<a href="peixes/paracheirodon_axelrodi.html" target="_self" rel="next">
-						<img src="images/tetra neon cardinal.png" alt="">
-						<h4>Tetra neon cardinal</h4>
-						<p><em>Paracheirodon axelrodi</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo, indisp">
-					<a href="peixes/poecilocharax_weitzmani.html" target="_self" rel="next">
-						<img src="images/tetra colibri.png" alt="">
-						<h4>Tetra colibri</h4>
-						<p><em>Poecilocharax weitzmani</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo, indisp">
-					<a href="peixes/prionobrama_filigera.html" target="_self" rel="next">
-						<img src="images/prionobrama filigera.png" alt="">
-						<h4>Tetra vidro de cauda vermelha</h4>
-						<p><em>Prionobrama filigera</em></p>
-					</a>
-				</nav >
-				<nav class="conteudo, indisp">
-					<a href="peixes/hyphessobrycon_mirmex.html" target="_self" rel="next">
-						<img src="images/hyphessobrycon myrmex.png" alt="">
-						<h4>Tetra mirmex</h4>
-						<p><em>Hyphessobrycom mirmex</em></p>
-					</a>
-				</nav>
 
-			</div>
-		</main>
-		<footer></footer>
-	</body>
+					<a href="peixes/hasemania-nana.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra silver tip.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra silver tip</h4>
+								<p class="cientifico">Hasemania nana</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon_amandae.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra foguinho.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Foguinho</p>
+								<p class="cientifico">Hyphessobrycom amandae</p>
+							</div>
+						</div>
+					</a>
+					
+					<a href="peixes/hyphessobrycon_columbianus.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra colombiano.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra colombiano</p>
+								<p class="cientifico">Hyphessobrycom colombianus</p>
+							</div>
+						</div>
+					</a>
+					
+					<a href="peixes/hyphessobrycon_eques.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra mato grosso.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Mato grosso</p>
+								<p class="cientifico">Hyphessobrycom eques</p>
+							</div>
+						</div>
+					</a>
+					
+					<a href="peixes/hyphessobrycon_flammeus.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra engraçadinho.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra engraçadinho</p>
+								<p class="cientifico">Hyphessobrycom flammeus</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon_hebertaxelrodi.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra neon negro.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra neon negro</p>
+								<p class="cientifico">Hyphessobrycom herbertaxelrodi</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon_megalopterus.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra fantasma negro.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Black phantom</p>
+								<p class="cientifico">Hyphessobrycom megalopterus</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon-notidanos.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra red devil.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Red devil</p>
+								<p class="cientifico">Hyphessobrycom notidanos</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon-paepkei.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra paepkei.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Rosáceo pingo de ouro</p>
+								<p class="cientifico">Hyphessobrycom paepkei</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon-pulchripinnis.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra limao.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra limão</p>
+								<p class="cientifico">Hyphessobrycom pulchripinnis</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon-pyrrhonotus.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra rosaceo flame back.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Rosáceo flame back</p>
+								<p class="cientifico">Hyphessobrycom pyrrhonotus</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon-rosaceus.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra bentosi.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra bentosi</p>
+								<p class="cientifico">Hyphessobrycom rosaceus</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon-mzuel.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra red cherry.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra red cherry</p>
+								<p class="cientifico">Hyphessobrycom sp. 'Mzuel'</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/nematobrycon_palmeri.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra imperador.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra imperador</p>
+								<p class="cientifico">Nematobrycon palmeri</p>
+							</div>
+						</div>
+					</a>
+
+
+					<a href="peixes/paracheirodon_axelrodi.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra neon cardinal.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra neon cardinal</p>
+								<p class="cientifico">Paracheirodon axelrodi</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/poecilocharax_weitzmani.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/tetra colibri.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra colibri</p>
+								<p class="cientifico">Poecilocharax weitzmani</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/prionobrama_filigera.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/prionobrama filigera.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra vidro de cauda vermelha</p>
+								<p class="cientifico">Prionobrama filigera</p>
+							</div>
+						</div>
+					</a>
+
+					<a href="peixes/hyphessobrycon_mirmex.html" target="_self" rel="next">
+					<div class="conteudo">
+							<img src="images/hyphessobrycon myrmex.png" alt="">
+							<div id="nomes">
+								<p class="vulgar">Tetra mirmex</p>
+								<p class="cientifico">Hyphesobrycon mirmex</p>
+							</div>
+						</div>
+					</a>
+			</section>
+		</article>
+	</main>
+	<footer></footer>
+	<script src="script.js"></script>
+</body>
 </html>
