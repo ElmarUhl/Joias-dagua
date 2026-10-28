@@ -3,24 +3,30 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="recipes.css">
+		<link rel="stylesheet" href="estilos/estilo.css">
+
+		<link rel="stylesheet" href="estilos/recipes.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 		<title>Patês e Gelatinas</title>
 	</head>
-	<body>
+	<body onresize="resize()">
 		<header>
 			<h1>Patês e Gelatinas</h1>
 		</header>
-		<nav id="menu">
+		<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+		<nav id="itens">
 			<a href="main.html">Voltar a página inicial</a>
 			<a href="alimentos.html" rel="prev">Tipos de Alimentos</a>
 		</nav>
 		<main>
-			<small>Home > Tipo de Alimentos > <strong>Patês e Gelatinas</strong></small>
-			<h2>Patês</h2>
-			<div class="row">
-				<div class="receita">
-					<h4>Receita Original do Patê de Gordon</h4>
-					<h5>Ingredientes</h5>
+			<article>
+				<small>Home > Tipo de Alimentos > <strong>Patês e Gelatinas</strong></small>
+				<h1>Patês</h1>
+				
+				<section class="receita">
+					<h2>Receita Original do Patê de Gordon</h2>
+					<h3>Ingredientes</h3>
 					<ul>
 						<li>450 gramas de fígado de boi</li>
 						<li>30 folhas de espinafre</li>
@@ -30,7 +36,7 @@
 						<li>1 colher (café) de sal</li>
 						<li>1 copo de água</li>
 					</ul>
-					<h5>Modo de preparo</h5>
+					<h3>Modo de preparo</h3>
 					<ol>
 						<li>Deve-se retirar do fígado todas as gorduras, peles, nervos e cartilagem.</li>
 						<li>Dê uma leve fervura no espinafre para retirar o ácido oxálico e jogue fora a água verde, pois este ácido inibe a absorção de ferro.</li>
@@ -38,10 +44,11 @@
 						<li>Leve ao fogo, em banho-maria, dando apenas um pré-cozimento para coagular as moléculas.</li>
 						<li>Após o processo, congele o patê em pequenas porções.</li>
 					</ol>
-				</div>
-				<div class="receita">
-					<h4>Receita Original do Patê de Gordon (Melhorado)</h4>
-					<h5>Materiais</h5>
+				</section>
+
+				<section class="receita">
+					<h2>Receita Original do Patê de Gordon (Melhorado)</h2>
+					<h3>Materiais</h3>
 					<ul>
 						<li>450 gramas de fígado de boi</li>
 						<li>30 folhas de espinafre</li>
@@ -52,7 +59,7 @@
 						<li>1 copo de água</li>
 						<li> gelatina sem sabor</li>
 					</ul>
-					<h5>Modo de preparo</h5>
+					<h3>Modo de preparo</h3>
 					<ol>
 						<li>Deve-se retirar do fígado todas as gorduras, peles, nervos e cartilagem.</li>
 						<li>Dê uma leve fervura no espinafre para retirar o ácido oxálico e jogue fora a água verde, pois este ácido inibe a absorção de ferro.</li>
@@ -65,18 +72,16 @@
 						<li>Coloque a mistura na geladeira e espere solificar.</li>
 						<li>Mantenha pequenas porções refriadas para uso e congele o restante.</li>
 					</ol>
-				</div>
-			</div>
+				</section>
 			
-			<h2>Outros</h2>
-			<div class="row">
-				<div class="receita">
-					<h4>Ovo cozido</h4>
-					<h5>Ingredientes</h5>
+			<h1>Outros</h1>
+			<section class="receita">
+					<h2>Ovo cozido</h2>
+					<h3>Ingredientes</h3>
 					<ul>
 						<li>1 ovo</li>
 					</ul>
-					<h5>Modo de preparo</h5>
+					<h3>Modo de preparo</h3>
 					<ol>
 						<li>Cozinhe o ovo em água.</li>
 						<li>Remova a clara.</li>
@@ -84,24 +89,27 @@
 						<li>Para alevinos a gema pode ser dissolvida na água, pingue a solução na água para alimentar os alevinos.</li>
 						<li>A solução pode ser congelada, assim permitindo um tempo maior de conservação.</li>
 					</ol>
-				</div>
-				<div class="receita">
-					<h4>Ração Adultos e Filhotes</h4>
-					<h5>Ingredientes</h5>
+				</section>
+
+				<section class="receita">
+					<h2>Ração Adultos e Filhotes</h2>
+					<h3>Ingredientes</h3>
 					<ul>
 						<li>1 ovo</li>
 						<li>1 comprimido de spirulina</li>
 					</ul>
-					<h5>Modo de preparo</h5>
+					<h3>Modo de preparo</h3>
 					<ol>
 						<li>Bata até misturar a gema, a clara e a spirulina. Em seguida, adicione uma xícara de água e bata tudo no liquidificador.</li>
 						<li>Remova a espuma na superfície do preparo e cozinhe no vapor por 20 minutos.</li>
 						<li>Após o cozimento o preparo deve estar com consistência de pudim e então deixe esfriar.</li>
 						<p>A ração pode ser conservada no congelador por semanas</p>
 					</ol>
-				</div>
-			</div>
+				</section>
+
+			</article>
 		</main>
 		<footer></footer>
+		<script src="script.js"></script>
 	</body>
 </html>

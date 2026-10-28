@@ -2,53 +2,69 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8" />
-	<title>Galeria de Camarões</title>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="galerias.css">
+	<link rel="stylesheet" href="estilos/estilo.css">
+	<link rel="stylesheet" href="estilos/galeria.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<title>Camarões</title>
 </head>
-<body>
+<body onresize="resize()">
 	<header>
 		<h1>Galeria de Camarões</h1>
 	</header>
-	<nav id="menu">
+	<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+	<nav id="itens">
 		<a href="main.html">Voltar a página inicial</a>
 		<a href="invertebrados.html">Voltar a página invertebrados</a>
 	</nav>
 	<main>
-		<small>Home > Invertebrados > <strong>Galeria de Camarões</strong></small>
-		<h2>Neocaridina</h2>
-		<div class="row">
-			<nav class="conteudo">
+		<article>
+			<small>Home > Invertebrados > <strong>Galeria de Camarões</strong></small>
+			<h1>Neocaridina</h1>
+			<section>
 				<a href="invertebrados/neocaridina-red-rili.html" target="_self" rel="next">
-					<img src="images/neocaridina red rili.png" alt=""><br>
-					<h4>Red rili</h4>
-					<p><em>Neocaridina davidi</em></p>
+					<div class="conteudo">
+						<img src="images/neocaridina red rili.png" alt=""><br>
+						<div id="nomes">
+							<p class="vulgar">Red rili</p>
+							<p class="cientifico">Neocaridina davidi</p>
+						</div>
+					</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="invertebrados/neocaridina-yellow.html" target="_self" rel="next">
-					<img src="images/neocaridina yellow.png" alt="">
-					<h4>Yellow</h4>
-					<p><em>Neocaridina davidi</em></p>
+					<div class="conteudo">
+						<img src="images/neocaridina yellow.png" alt="">
+						<div id="nomes">
+							<p class="vulgar">Yellow</p>
+							<p class="cientifico">Neocaridina davidi</p>
+						</div>
+					</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="invertebrados/neocaridina-red.html" target="_self" rel="next">
-					<img src="images/neocaridina red.png" alt="">
-					<h4>Red cherry</h4>
-					<p><em>Neocaridina davidi</em></p>
+				<div class="conteudo">
+						<img src="images/neocaridina red.png" alt="">
+						<div id="nomes">
+							<p class="vulgar">Red cherry</p>
+							<p class="cientifico">Neocaridina davidi</p>
+						</div>
+					</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="invertebrados/neocaridina-blue.html" target="_self" rel="next">
-					<img src="images/neocaridina blue.png" alt="">
-					<h4>Blue dream</h4>
-					<p><em>Neocaridina davidi</em></p>
+				<div class="conteudo">
+						<img src="images/neocaridina blue.png" alt="">
+						<div id="nomes">
+							<p class="vulgar">Blue diamond</p>
+							<p class="cientifico">Neocaridina davidi</p>
+						</div>
+					</div>
 				</a>
-			</nav>
-		</div>
+			</section>
+		</article>
 	</main>
 	<footer></footer>
+	<script src="script.js"></script>
 </body>
 </html>

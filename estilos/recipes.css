@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+article {
+    width: 350px;
+    margin: auto;
+}
+
+main h1 {
+    font-family: 'Jura';
+    color: var(--cor8);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+section.receita {
+    color: white;
+    font-size: 1.2em;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px auto;
+}
+section.receita h2 {
+    color: var(--cor5);
+    font-size: 1.4em;
+    text-align: center;
+}
+section.receita h3 {
+    margin-top: 10px;
+    color: var(--cor1);
+    font-size: 1.3em;
+}
+section.receita ul, ol{
+    list-style-position: inside;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+section.receita li {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+    article {
+        width: 800px;
+        margin: 0px;
+    }
+    main h1 {
+        font-size: 3em;
+    }
+    
+    section.receita {
+        font-size: 2em;
+    }
+}

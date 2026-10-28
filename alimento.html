@@ -3,78 +3,108 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="galerias.css">
+	<link rel="stylesheet" href="estilos/estilo.css">
+	<link rel="stylesheet" href="estilos/galeria.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 	<title>Alimentos</title>
 </head>
-<body>
+<body onresize="resize()">
 	<header>
 		<h1>Galeria de Alimentos Vivos</h1>
 	</header>
-	<nav id="menu">
+	<span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+	<nav id="itens">
 		<a href="main.html">Voltar à página inicial</a>
 		<a href="alimentos.html" rel="prev">Tipos de Alimentos</a>
 	</nav>
 	<main>
-		<small>Home > Tipo de Alimentos > <strong>Galeria de Alimentos Vivos</strong></small>
-		<h2>Alimento Vivo</h2>
-		<div class="row">
-			<nav class="conteudo">
+		<article>
+			<small>Home > Tipo de Alimentos > <strong>Galeria de Alimentos Vivos</strong></small>
+			<h1>Alimento Vivo</h1>
+			<section>
 				<a href="alimentos/turbatrix_aceti.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/verme do vinagre.png" alt="">
-					<h4>Vermes do vinagre</h4>
-					<p><em>Turbatrix aceti</em></p>
+					<div id="nomes">
+						<p class="vulgar">Vermes do vinagre</p>
+						<p class="cientifico">Turbatrix aceti</p>
+					</div>
+				</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/daphnia.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/dafnia.png" alt="">
-					<h4>Dáfnias</h4>
-					<p><em>Daphnia sp.</em></p>
+					<div id="nomes">
+						<p class="vulgar">Dáfnias</p>
+						<p class="cientifico">Daphnia sp.</p>
+					</div>
+				</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/enchytraeus_buchholzi.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/enquitreias.png" alt="">
-					<h4>Enquitreias</h4>
-					<p><em>Enchytraeus buchholzi</em></p>
+					<div id="nomes">
+						<p class="vulgar">Enquitreias</p>
+						<p class="cientifico">Enchytraeus buchholzi</em></p>
+					</div>
+				</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/paramecio.html" target="_self" rel="next">
-					<img src="images/paramecium.png" alt="">
-					<h4>Paramécio</h4>
-					<p><em>Paramecium sp.</em></p>
+				<div class="conteudo">
+						<img src="images/paramecium.png" alt="">
+						<div id="nomes">
+							<p class="vulgar">Paramécio</p>
+							<p class="cientifico">Paramecium sp.</p>
+						</div>
+					</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/tenebrios.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/tenebrio-molitor.png" alt="">
-					<h4>Tenébrio comum</h4>
-					<p><em>Tenebrio molitor</em></p>
+					<div id="nomes">
+						<p class="vulgar">Tenébrio comum</p>
+						<p class="cientifico">Tenebrio molitor</p>
+					</div>
+				</div>
 				</a> 
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/besouro_amendoim.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/besouro amendoim.png" alt="">
-					<h4>Besouro do amendoim</h4>
-					<p><em>Palembus dermestoides</em></p>
+					<div id="nomes">
+						<p class="vulgar">Besouro do amendoim</p>
+						<p class="cientifico">Palembus dermestoides</p>
+					</div>
+				</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/grilos.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/Acheta_domesticus.png" alt="">
-					<h4>Grilo</h4>
-					<p><em>Acheta domesticus</em></p>
+					<div id="nomes">
+						<p class="vulgar">Grilo</p>
+						<p class="cientifico">Acheta domesticus</p>
+					</div>
+				</div>
 				</a>
-			</nav>
-			<nav class="conteudo">
+
 				<a href="alimentos/artemia.html" target="_self" rel="next">
+				<div class="conteudo">
 					<img src="images/artemia.png" alt="">
-					<h4>Artemia</h4>
-					<p><em>Artemia sp.</em></p>
+					<div id="nomes">
+						<p class="vulgar">Artemia</p>
+						<p class="cientifico">Artemia sp.</p>
+					</div>
+				</div>
 				</a>
-			</nav>
-		</div>
+			</section>
+		</article>
 	</main>
+	<footer></footer>
+	<script src="script.js"></script>
 </body>
 </html>

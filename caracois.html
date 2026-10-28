@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="galerias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/galeria.css">
     <title>Caracóis</title>
 </head>
-<body>
+<body onresize="resize()">
     <header>
         <h1>Galeria de Caracóis</h1>
     </header>
-    <nav id="menu">
+    <span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+    <nav id="itens">
         <a href="main.html">Voltar a página inicial</a><a href="invertebrados.html">Voltar a invertebrados</a>
     </nav>
     <main>
-        <small>Home > Invertebrados > <strong>Galeria de Caracóis</strong></small>
-        <h2>Ampulárias</h2>
-        <div class="row">
-            <nav class="conteudo">
+        <article>
+            <small>Home > Invertebrados > <strong>Galeria de Caracóis</strong></small>
+            <h1>Ampulárias</h1>
+            <section>
                 <a href="invertebrados/pomacea-diffusa.html" target="_self" rel="next">
-                    <img src="images/ampularia gold.png" alt="">
-                    <h4>Ampulária gold</h4>
-                    <p><em>Pomacea diffusa</em></p>
+                <div class="conteudo">
+                        <img src="images/ampularia gold.png" alt="">
+                        <div id="nomes">
+                            <p class="vulgar">Ampulária gold</p>
+                            <p class="cientifico">Pomacea diffusa</p>
+                        </div>
+                    </div>
                 </a>
-            </nav>
-        </div>
+            </section>
+        </article>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>

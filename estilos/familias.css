@@ -10,14 +10,14 @@ main {
 main h1 {
     font-family: var(--fonte2);
     color: var(--cor8);
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 section {
     opacity: 70%;
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 section:hover { opacity: 100%; }
 section > image {

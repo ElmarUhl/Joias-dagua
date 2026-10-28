@@ -4,34 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="links.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> <!-- Google Icons -->
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/links.css">
     <title>Links</title>
-    <style>
-        h3 {
-            color: yellow;
-            font-size: 2em;
-        }
-        main ol {
-            columns: 2;
-            font-size: 2em;
-            color: white;
-        }
-        main a {
-            color: white;
-        }
-    </style>
 </head>
-<body>
+<body onresize="resize()">
     <header>
         <h1>Links</h1>
     </header>
-    <nav id="menu">
+    <span id="burger" class="material-symbols-outlined" onclick="clicked()">menu</span>
+    <nav id="itens">
         <a href="main.html" rel="prev">Voltar à página inicial</a>
     </nav>
     <main>
         <small>Home > <strong>Links</strong></small>
-        <h2>Sites</h2>
-        <h3>A</h3>
+        <h1>Sites</h1>
+        <h2>A</h2>
             <ol>
                 <li><a target="_blank" href="https://www.ablaquariofilia.org.br/">Associação Brasileira de Lojas de Aquariofilia</a></li>
                 <li><a href="https://aka.org/">American Killifish Association</a></li>
@@ -52,7 +42,7 @@
                 <li><a href="https://www.aquaplantados.com.br/index.php?route=common/home">Aquapaisagismo</a></li>
                 <li><a href="http://www.apk.pt/">Associação Portuguesa de Killifilia</a></li>
             </ol>
-            <h3>B - E</h3>
+            <h2>B - E</h2>
             <ol>
                 <li><a href="http://www.bettaterritory.nl/" target="_blank">Betta Territory</a></li>
                 <li><a href="https://killis.org.uk/">British Killifish Association</a></li>
@@ -65,7 +55,7 @@
                 <li><a target="_blank" href="https://escoladeaquario.com.br/plantas-para-aquario-plantado/">Escola de Aquário</a></li>
                 <li><a href="https://www.cryptocoryneworld.org/index.php" target="_blank">Cryptocoryne World</a></li>
             </ol>
-        <h3>F</h3>
+        <h2>F</h2>
             <ol>
                 <li><a href="https://fishkeepinganswers.com/" target="_blank">Fish Keeping Answers</a></li>
                 <li><a href="https://www.fao.org/3/ac742e/AC742E00.htm#TOC" target="_blank">FAO (The artificial propagation of warm-water finfishes
@@ -78,7 +68,7 @@
                 <li><a href="https://www.flowgrow.de/" target="_blank">FlowGrow</a></li>
                 <li><a href="https://fishguysplace.com" target="_blank">Fishguy's Place</a></li>
             </ol>
-        <h3>I - P</h3>
+        <h2>I - P</h2>
             <ol>
                 <li><a href="https://www.ig-bssw.org" target="_blank">IG BSSW</a></li>
                 <li><a target="_blank" href="https://inaquarismo.org.br">Instituto Nacional de Aquarismo</a></li>
@@ -97,25 +87,25 @@
                 <li><a href="https://projectpiaba.org/" target="_blank">Project Piaba</a></li>
                 <li><a href="https://www.minhobox.com.br/" target="_blank">Portal da Minhoca</a></li>
             </ol>
-        <h3>Q - W</h3>
+        <h2>Q - W</h2>
             <ol>
                 <li><a href="https://powo.science.kew.org/" target="_blank">Royal Botanicals Gardens</a></li>
-                <li><a href="https://www.seriouslyfish.com/" target="_blank">https://escoladeaquario.com.br/plantas-para-aquario-plantado/Seriously Fish</a></li>
+                <li><a href="https://www.seriouslyfish.com/" target="_blank">Seriously Fish</a></li>
                 <li><a href="http://www.selectaquatics.com/" target="_blank">Select Aquatics</a></li>
                 <li><a href="https://www.tfhmagazine.com/articles/freshwater" target="_blank">TFH Magazine</a></li>
                 <li><a href="https://www.tropicalfishkeeping.com/" target="_blank">Tropical Fish Keeping</a></li>
-                <li><a href="https://www.verticalgardenpatrickblanc.com/" target="_blank">Vertical Garden</a></li>https://escoladeaquario.com.br/plantas-para-aquario-plantado/
+                <li><a href="https://www.verticalgardenpatrickblanc.com/" target="_blank">Vertical Garden</a></li>
                 <li><a href="http://www.viviparos.com/" target="_blank">Viviparos</a></li>
                 <li><a href="https://www.waterwereld.nu/springstaarteneng.html" target="_blank">Springtails</a></li>
                 <li><a href="https://wormman.blog/" target="_blank">Worm Man Blog</a></li>
                 <li><a href="http://www.wetwebmedia.com/" target="_blank">Wet Web Media.com</a></li>
             </ol>
 
-        <h2>YouTube</h2>
+        <h1>YouTube</h1>
         <ol>
             <li><a href="https://www.youtube.com/channel/UCDYjr1SOnAR_jlJuNxmpvRA/videos">Acará Rio</a></li>
-            <li><a href="https://www.youtube.com/watch?v=Wk9XUY6eNBs" style="font-size: 0.5em;">Angelfish and German Blue Ram Fish Room Tour with Master Breeder Dean</a></li>
-            <li><a href="https://www.youtube.com/@AntonioCandidoAquarismoBrasil/videos">AntonioCandidoAquarismoBrasil</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Wk9XUY6eNBs" style="font-size: 0.5em;" target="_blank">Angelfish and German Blue Ram Fish Room Tour with Master Breeder Dean</a></li>
+            <li><a href="https://www.youtube.com/@AntonioCandidoAquarismoBrasil/videos">Antonio Candido Aquarismo Brasil</a></li>
             <li><a href="https://www.youtube.com/@Aquadiction">Aquadiction</a></li>
             <li><a href="https://www.youtube.com/c/Aquariumcoop">Aquariumcoop</a></li>
             <li><a href="https://www.youtube.com/c/AquariumGardensAquascaping/videos">Aquarium Gardens Aquascaping</a></li>
@@ -127,8 +117,8 @@
             <li><a href="https://www.youtube.com/@bothetetrabreeder8734/featured">Bo the tetra breeder</a></li>
             <li><a href="https://www.youtube.com/@CarlosDiezAquatics">Carlos Diez</a></li>
             <li><a href="https://www.youtube.com/user/chrislukhaup/videos">chris Lukhaup</a></li>
-            <li><a href="https://www.youtube.com/@clubedoguppyaquarismocia7584/videos">clubedoguppyaquarismocia7584</a></li>
-            <li><a href="https://www.youtube.com/user/coralfish12g/videos">coralfish12g</a></li>
+            <li><a href="https://www.youtube.com/@clubedoguppyaquarismocia7584/videos">Clube do Guppy Aquarismo</a></li>
+            <li><a href="https://www.youtube.com/user/coralfish12g/videos">Coral Fish 12g</a></li>
             <li><a href="https://www.youtube.com/@DansFish/videos">Dans Fish</a></li>
             <li><a href="https://www.youtube.com/@dk1203/videos"></a>Desmond Koh</li>
             <li><a href="https://www.youtube.com/c/Dustinsfishtanks/videos">Dustins fish tanks</a></li>
@@ -141,7 +131,7 @@
             <li><a href="https://www.youtube.com/watch?v=Os4SCzbHmN4">Pielęgniczki Ramireza - Microgeophagus ramirezi</a></li>
             <li><a href="https://m.facebook.com/prestigeaquariumltda?locale2=pt_BR">Prestige Aquarium</a></li>
             <li><a href="https://www.youtube.com/watch?v=W1T5LqmwglU">Wild hunt, Rare Verity's of moss and plants.</a></li>
-            <li><a href="https://www.youtube.com/watch?v=wIRw1YpTVLw">xxx</a></li>
+            <li><a href="https://www.youtube.com/watch?v=wIRw1YpTVLw" target="_blank">Boxing fish for shipping</a></li>
             <li><a href="https://www.youtube.com/@LeandroSousa_IctioXingu/videos">Leandro Sousa</a></li>
             <li><a href="https://www.youtube.com/@paulstingray/videos">Paul Stingray</a></li>
             <li><a href="https://www.youtube.com/@AquariumPlantLab/videos">Aquarium Plant Lab</a></li>
@@ -150,15 +140,15 @@
             <li><a href="https://www.youtube.com/watch?v=wKVWl6_eWXA&list=PL-bcETGeMM4bZNA5cmMZ3pkuP3ZYcYxjt&index=3" target="_blank">Fitoplancton nanochloropsis como cultivar</a></li>
         </ol>
 
-        <h2>Fóruns</h2>
+        <h1>Fóruns</h1>
         <ol>
             <li><a href="https://www.nano-reef.com/forums/">Nano Reef</a></li>
             <li><a href="https://www.brasilreef.com/">Brasil Reef</a></li>
             <li><a href="https://forum.aquariumcoop.com/">Aquarium Co-Op</a></li>
         </ol>
 
-        <h2>Lojas</h2>
-        <h3>Estrangeiras</h3>
+        <h1>Lojas</h1>
+        <h2>Estrangeiras</h2>
             <ol>
                 <li><a href="https://www.aquabid.com/" target="_blank">Aquabid</a></li>
                 <li><a href="https://www.aqua-imports.com/" target="_blank">Aqua Imports</a></li>
@@ -208,7 +198,7 @@
                 <li><a href="https://worldwidecorals.com/" target="_blank">World Wide Corals</a></li>
                 <li><a href="https://zoanthids.com/" target="_blank">Zoanthids.com</a></li>
             </ol>
-        <h3>Nacionais</h3>
+        <h2>Nacionais</h2>
             <ol>
                 <li><a href="https://www.aqualeaf.com.br/" target="_blank">Aqua Leaf</a></li>
                 <li><a href="https://aqualandia.com.br/" target="_blank">Aqualândia</a></li>
@@ -246,5 +236,6 @@
             </ol>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>
